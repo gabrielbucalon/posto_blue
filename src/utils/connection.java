@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class conection {
+public class connection {
     public static Connection getConnection(){ // metodo para conexão com banco de dados
         Connection conn = null;
         try{ // Tentando conectar com banco de dados
