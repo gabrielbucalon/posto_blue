@@ -1,5 +1,3 @@
-package login;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -27,7 +25,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("./view/sample.fxml"));
         //you can use underdecorated or transparent.
         stage.initStyle(StageStyle.TRANSPARENT);
         //stage.initStyle(StageStyle.UNDERDECORATED);
