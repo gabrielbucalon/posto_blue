@@ -9,48 +9,48 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="666.0" style="-fx-background-color: #0087A0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="1.7976931348623157E308" style="-fx-background-color: #0087A0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="276.0" layoutY="45.0" text="Posto" textFill="WHITE">
+      <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="105.0" layoutY="55.0" text="Posto" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="341.0" layoutY="42.0" text="Blue" textFill="WHITE">
+      <Label accessibleRole="PARENT" alignment="BOTTOM_LEFT" layoutX="170.0" layoutY="52.0" text="Blue" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="259.0" layoutY="134.0" prefHeight="25.0" prefWidth="203.0" />
-      <Label layoutX="259.0" layoutY="115.0" text="Usuário" textFill="WHITE">
+      <TextField accessibleRole="PARENT" alignment="CENTER" layoutX="77.0" layoutY="136.0" prefHeight="25.0" prefWidth="203.0" />
+      <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="77.0" layoutY="117.0" text="Usuário" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="259.0" layoutY="178.0" text="Senha" textFill="WHITE">
+      <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="77.0" layoutY="174.0" text="Senha" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <PasswordField layoutX="259.0" layoutY="197.0" prefHeight="25.0" prefWidth="203.0" />
-      <Button layoutX="377.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Entrar" textFill="#213954" AnchorPane.bottomAnchor="133.0">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Button>
-      <Button cancelButton="true" layoutX="264.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Cancelar" textOverrun="CLIP">
+      <PasswordField accessibleRole="PARENT" alignment="CENTER" layoutX="77.0" layoutY="193.0" prefHeight="25.0" prefWidth="203.0" />
+      <Button accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="68.0" layoutY="233.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Cancelar" textOverrun="CLIP">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="442.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/login.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="20.0" fitWidth="14.0" layoutX="333.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView accessibleRole="PARENT" fitHeight="20.0" fitWidth="14.0" layoutX="147.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/cancel.png" />
+         </image>
+      </ImageView>
+      <Button accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="173.0" layoutY="233.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Entrar" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView accessibleRole="PARENT" fitHeight="20.0" fitWidth="21.0" layoutX="246.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/login.png" />
          </image>
       </ImageView>
    </children>
