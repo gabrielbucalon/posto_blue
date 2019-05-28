@@ -9,46 +9,46 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" style="-fx-background-color: #0087A0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane cache="true" focusTraversable="true" maxHeight="1.7976931348623157E308" prefHeight="343.0" prefWidth="391.0" style="-fx-background-color: #0087A0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="105.0" layoutY="55.0" text="Posto" textFill="WHITE">
+      <Label accessibleRole="PARENT" alignment="CENTER" layoutX="147.0" layoutY="61.0" text="Posto" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="24.0" />
          </font>
       </Label>
-      <Label accessibleRole="PARENT" alignment="BOTTOM_LEFT" layoutX="170.0" layoutY="52.0" text="Blue" textFill="WHITE">
+      <Label accessibleRole="PARENT" alignment="CENTER" layoutX="212.0" layoutY="58.0" text="Blue" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField accessibleRole="PARENT" alignment="CENTER" layoutX="77.0" layoutY="136.0" prefHeight="25.0" prefWidth="203.0" />
-      <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="77.0" layoutY="117.0" text="Usuário" textFill="WHITE">
+      <TextField accessibleRole="PARENT" alignment="CENTER" layoutX="111.0" layoutY="137.0" prefHeight="25.0" prefWidth="203.0" />
+      <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="111.0" layoutY="118.0" text="Usuário" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="77.0" layoutY="174.0" text="Senha" textFill="WHITE">
+      <Label accessibleRole="PARENT" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="181.0" text="Senha" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <PasswordField accessibleRole="PARENT" alignment="CENTER" layoutX="77.0" layoutY="193.0" prefHeight="25.0" prefWidth="203.0" />
-      <Button accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="68.0" layoutY="233.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Cancelar" textOverrun="CLIP">
+      <PasswordField accessibleRole="PARENT" alignment="CENTER" layoutX="111.0" layoutY="200.0" prefHeight="25.0" prefWidth="203.0" />
+      <Button accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="109.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Cancelar" textOverrun="CLIP">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <ImageView accessibleRole="PARENT" fitHeight="20.0" fitWidth="14.0" layoutX="147.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView accessibleRole="PARENT" fitHeight="20.0" fitWidth="14.0" layoutX="188.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/cancel.png" />
          </image>
       </ImageView>
-      <Button accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="173.0" layoutY="233.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Entrar" textOverrun="CLIP">
+      <Button accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="214.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Entrar" textOverrun="CLIP">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <ImageView accessibleRole="PARENT" fitHeight="20.0" fitWidth="21.0" layoutX="246.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView accessibleRole="PARENT" fitHeight="20.0" fitWidth="21.0" layoutX="287.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/login.png" />
          </image>
