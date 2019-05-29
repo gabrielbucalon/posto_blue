@@ -10,7 +10,7 @@ public class connection {
         Connection conn = null;
         try{ // Tentando conectar com banco de dados
             //Passagem de parametros para conexão com banco de dados
-            conn = DriverManager.getConnection("jbdc:mysql://localhost:3306/postoBlue", "root", "123456");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/postoblue", "root", "123456");
             System.out.println("Conectado com sucesso"); // Mensagem no console
         }catch (SQLException err){
             System.out.println("OPS, erro ao conectar com banco" + err); // mensagem no console com erro

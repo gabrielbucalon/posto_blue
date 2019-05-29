@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane cache="true" focusTraversable="true" maxHeight="1.7976931348623157E308" prefHeight="343.0" prefWidth="391.0" style="-fx-background-color: #0087A0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane cache="true" focusTraversable="true" maxHeight="1.7976931348623157E308" prefHeight="343.0" prefWidth="391.0" style="-fx-background-color: #0087A0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
    <children>
       <Label accessibleRole="PARENT" alignment="CENTER" layoutX="147.0" layoutY="61.0" text="Posto" textFill="WHITE">
          <font>
@@ -21,7 +21,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField accessibleRole="PARENT" alignment="CENTER" layoutX="111.0" layoutY="137.0" prefHeight="25.0" prefWidth="203.0" />
+      <TextField fx:id="txtUser" accessibleRole="PARENT" alignment="CENTER" layoutX="111.0" layoutY="137.0" prefHeight="25.0" prefWidth="203.0" />
       <Label accessibleRole="PARENT" contentDisplay="CENTER" layoutX="111.0" layoutY="118.0" text="Usuário" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -32,8 +32,8 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <PasswordField accessibleRole="PARENT" alignment="CENTER" layoutX="111.0" layoutY="200.0" prefHeight="25.0" prefWidth="203.0" />
-      <Button accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="109.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Cancelar" textOverrun="CLIP">
+      <PasswordField fx:id="txtPassword" accessibleRole="PARENT" alignment="CENTER" layoutX="111.0" layoutY="200.0" prefHeight="25.0" prefWidth="203.0" />
+      <Button fx:id="closeApp" accessibleRole="PARENT" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="109.0" layoutY="247.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="30.0" prefWidth="99.0" text="Cancelar" textOverrun="CLIP">
          <font>
             <Font size="14.0" />
          </font>
