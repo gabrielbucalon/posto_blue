@@ -1,3 +1,8 @@
+/*
+*  PROJETO INTERDISCIPLINAR
+*  Criado por Gabriel Bucalon, Patrick Arashiro e Winicius Andrade
+*/
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

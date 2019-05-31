@@ -1,20 +1,43 @@
 package utils;
 
 //Libs
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class connection {
-    public static Connection getConnection(){ // metodo para conexão com banco de dados
-        Connection conn = null;
-        try{ // Tentando conectar com banco de dados
-            //Passagem de parametros para conexão com banco de dados
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/postoblue", "root", "123456");
-            System.out.println("Conectado com sucesso"); // Mensagem no console
-        }catch (SQLException err){
-            System.out.println("OPS, erro ao conectar com banco" + err); // mensagem no console com erro
+public class connection extends BDConnection {
+    //SUPER
+    public connection(){
+        this.driver = "com.mysql.cj.jdbc.Driver";
+        this.porta = 3306;
+        this.servidor = "localhost";
+        this.bd = "postoblue";
+        this.usuario = "root";
+        this.senha = "123456";
+    }
+
+    public Connection getConnection(){ // metodo para conexão com banco de dados
+        try { // Tentativa de conectar
+            Class.forName(driver);
+            DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+            con = DriverManager.getConnection(getURL(), usuario, senha);
+            System.out.println("Conetado com sucesso!");
+        } catch (SQLException ex) { // Se não conseguir conectar mostrara o motivo do erro da conexeção
+            Logger.getLogger(connection.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "ERRO AO CARREGAR DRIVE");
+        } catch (ClassNotFoundException ex) { // Caso aconteça algum problema no driver
+            Logger.getLogger(connection.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return conn; // retornando a conexão, mesmo certo ou errado.
+
+        return con;
+    }
+
+    @Override
+    public  String getURL() { // metodo que retorna url da conexão
+        return "jdbc:mysql://" + this.servidor + ":" + this.porta + "/" + this.bd
+                + "?useTimezone=true&serverTimezone=UTC";
     }
 }
