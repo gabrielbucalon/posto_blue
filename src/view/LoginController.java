@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import utils.connection;
 import utils.messages;
 
-import javax.swing.*;
 import java.sql.*;
 
 
@@ -87,6 +86,7 @@ public class LoginController extends connection {
                     dialogStage.show();
                 }
             }catch (Exception err){
+
                 messages.infoBoxErr("Não foi possível entrar\nTente novamente", "ERRO!", null);
                 System.out.println("Ops, não deu para logar " + err);
             }

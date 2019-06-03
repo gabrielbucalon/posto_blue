@@ -1,8 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
-
+<AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: dddddd;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeController">
+   <children>
+      <AnchorPane layoutX="36.0" prefHeight="606.0" prefWidth="147.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="btnTanques" layoutX="12.0" layoutY="239.0" mnemonicParsing="false" onAction="#actionTanques" onMouseEntered="#moveEntryTank" onMouseExited="#moveExitTank" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #ffffff; -fx-border-color: #5a849f; -fx-border-radius: 2px;" />
+            <Button fx:id="btnSobre" layoutX="12.0" layoutY="314.0" mnemonicParsing="false" onAction="#actionSobre" onMouseEntered="#moveInfoEntry" onMouseExited="#moveInfoExit" prefHeight="44.0" prefWidth="138.0" style="-fx-border-color: #5a849f; -fx-background-color: white; -fx-border-radius: 2px;" />
+            <Button fx:id="btnFaturamento" layoutX="12.0" layoutY="163.0" mnemonicParsing="false" onAction="#actionFaturamento" onMouseEntered="#moveEntryFaturamento" onMouseExited="#moveExitFaturamento" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #ffffff; -fx-border-color: #5a849f; -fx-border-radius: 2px;" />
+            <Button fx:id="btnAbastecer" layoutX="12.0" layoutY="94.0" mnemonicParsing="false" onAction="#actionAbastecer" onMouseExited="#moveFuelExit" onMouseMoved="#moveFuelEntry" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #ffffff; -fx-border-color: #5a849f; -fx-border-radius: 2px;" />
+            <Button fx:id="btnLogoff" layoutX="12.0" layoutY="548.0" mnemonicParsing="false" onAction="#actionLogoff" onMouseEntered="#moveLogoffEntry" onMouseExited="#moveLogoffExit" prefHeight="44.0" prefWidth="138.0" style="-fx-border-color: #5a849f; -fx-background-color: white; -fx-border-radius: 2px;" />
+            <Label fx:id="lblAbastecer" layoutX="50.0" layoutY="107.0" text="Abastecer">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFaturamento" layoutX="40.0" layoutY="176.0" text="Faturamento">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTanques" layoutX="54.0" layoutY="252.0" text="Tanques">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSobre" layoutX="61.0" layoutY="327.0" text="Sobre">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSair" layoutX="68.0" layoutY="563.0" text="Sair">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="606.0" prefWidth="47.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="10.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/iconfinder_Energy_Energy_Fuel_Gas_Station_Gasolin_3911257.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="9.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/iconfinder_money_299107.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="9.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/iconfinder_Energy_Energy_Oil_Barrel_Fuel_Industry_3911252.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="11.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/iconfinder_sign-info_299086.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="9.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/183189-512.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label fx:id="lblWelcome" layoutX="538.0" layoutY="104.0" text="Bem-vindo," textFill="#4d30bf">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAbastecer11" layoutX="673.0" layoutY="104.0" text="Admin" textFill="#4d30bf">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
