@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class faturamento {
+public class FaturamentoController {
     @FXML
     private void actionBack(ActionEvent event) throws IOException {
         Stage dialogStage = new Stage();
