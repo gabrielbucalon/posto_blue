@@ -12,6 +12,10 @@ import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.StageStyle;
 
+//Imports para deixar a tela fullscreen
+import javafx.stage.Screen;
+import javafx.geometry.Rectangle2D;
+
 public class Main extends Application {
 
 
@@ -44,6 +48,10 @@ public class Main extends Application {
                 stage.setY(event.getScreenY() - yOffset);
             }
         });
+
+        //Deixa a tela full Screen
+        //Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+        //Scene scene = new Scene(root, screenBounds.getWidth(), screenBounds.getHeight());
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
