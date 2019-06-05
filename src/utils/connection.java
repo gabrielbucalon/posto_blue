@@ -16,7 +16,7 @@ public class connection extends BDConnection {
         this.servidor = "localhost";
         this.bd = "postoblue";
         this.usuario = "root";
-        this.senha = "123456";
+        this.senha = "1234";
     }
 
     public Connection getConnection(){ // metodo para conexão com banco de dados
