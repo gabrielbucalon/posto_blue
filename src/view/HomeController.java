@@ -146,8 +146,13 @@ public class HomeController {
     }
 
     @FXML // Ao clicar ele mandara o usuario para tela de abastacer
-    private void actionAbastecer(ActionEvent event){
-        System.out.println("Abastecer");
+    private void actionAbastecer(ActionEvent event) throws IOException{
+        Node source = (Node) event.getSource(); // Pega o evento do botão
+        dialogStage = (Stage) source.getScene().getWindow();
+        dialogStage.close();
+        scene = new Scene(FXMLLoader.load(getClass().getResource("abastecimento.fxml")));
+        dialogStage.setScene(scene);
+        dialogStage.show();
     }
 
     @FXML // Ao clicar ele mandara o usuario para tela de faturamento
@@ -160,9 +165,15 @@ public class HomeController {
         dialogStage.show();
     }
 
+
     @FXML
-    private void actionTanques(ActionEvent event){
-        System.out.println("action tanques");
+    private void actionTanques(ActionEvent event) throws IOException {
+        Node source = (Node) event.getSource(); // Pega o evento do botão
+        dialogStage = (Stage) source.getScene().getWindow();
+        dialogStage.close();
+        scene = new Scene(FXMLLoader.load(getClass().getResource("tanque.fxml")));
+        dialogStage.setScene(scene);
+        dialogStage.show();
     }
 
     @FXML

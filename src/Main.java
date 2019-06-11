@@ -25,7 +25,7 @@ public class Main extends Application {
     private double yOffset = 0;
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(final Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("view/login.fxml"));
         //you can use underdecorated or transparent.
         stage.initStyle(StageStyle.TRANSPARENT);
