@@ -1,25 +1,54 @@
 package model;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
 import java.io.IOException;
+import java.sql.Connection;
 
-public class faturamento {
-    @FXML
-    private void actionBack(ActionEvent event) throws IOException {
-        Stage dialogStage = new Stage();
-        Scene scene;
+import utils.connection;
 
-        Node source = (Node) event.getSource(); // Pega o evento do botão
-        dialogStage = (Stage) source.getScene().getWindow();
-        dialogStage.close();
-        scene = new Scene(FXMLLoader.load(getClass().getResource("home.fxml")));
-        dialogStage.setScene(scene);
-        dialogStage.show();
+public class faturamento extends connection {
+
+    String val;
+    String nomeFun;
+    String type;
+    String qntd;
+
+    //valor
+    public String getVal(){
+        return val;
+    }
+    public void setVal(String val){
+        this.val = val;
+    }
+
+    //nome funcionario
+    public String getNomeFunc(){
+        return val;
+    }
+    public void setNomeFunc(String nomeFunc){
+        this.nomeFun = nomeFunc;
+    }
+
+    //tipo
+    public String getTipo(){
+        return type;
+    }
+    public void setTipo(String tipo){
+        this.type = tipo;
+    }
+
+    //quantidade
+    public String getQuantidade(){
+        return qntd;
+    }
+    public void setQuantidade(String qtd){
+        this.qntd = qtd;
+    }
+
+
+    Connection conn = null;
+    public faturamento(String valor, String nomeCompleto, String tipo, String qntdLitros){conn =  getConnection();}
+
+    public void getFaturamento(){
+        getConnection();
     }
 }

@@ -11,24 +11,24 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="view.FaturamentoController" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.FaturamentoController">
    <children>
       <Label layoutX="66.0" layoutY="75.0" text="Faturamanto">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="776.0" layoutY="75.0" text="R$ 3.060,00">
+      <Label fx:id="faturamentoTotal" layoutX="776.0" layoutY="75.0" text="R$ 3.060,00">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="66.0" layoutY="202.0" prefHeight="300.0" prefWidth="832.0">
+      <TableView fx:id="tableView" layoutX="66.0" layoutY="202.0" prefHeight="300.0" prefWidth="832.0">
         <columns>
-          <TableColumn prefWidth="135.00001525878906" text="Valor" />
-          <TableColumn prefWidth="246.0" text="Nome Funcionário" />
-            <TableColumn minWidth="0.0" prefWidth="252.0" text="Tipo de Combustível" />
-            <TableColumn minWidth="8.0" prefWidth="198.0" text="Quantidade" />
+          <TableColumn fx:id="colVal" prefWidth="135.00001525878906" text="Valor" />
+          <TableColumn fx:id="nomeFunc" prefWidth="246.0" text="Nome Funcionário" />
+            <TableColumn fx:id="tipoComb" minWidth="0.0" prefWidth="252.0" text="Tipo de Combustível" />
+            <TableColumn fx:id="qtd" minWidth="8.0" prefWidth="198.0" text="Quantidade" />
         </columns>
       </TableView>
       <BorderPane layoutY="-3.0" prefHeight="65.0" prefWidth="950.0" style="-fx-background-color: #0087A0; -fx-min-width: 100%;">
