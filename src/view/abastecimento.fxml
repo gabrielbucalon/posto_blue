@@ -16,14 +16,24 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.abastecimento">
+<AnchorPane prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AbastecimentoController">
    <children>
       <Label layoutX="39.0" layoutY="87.0" text="Abastecer" textFill="#6f6e6e">
          <font>
             <Font name="System Bold" size="24.0" />
          </font></Label>
       <BorderPane layoutY="579.0" prefHeight="60.0" prefWidth="950.0" style="-fx-background-color: #0087A0;" />
-      <BorderPane prefHeight="60.0" prefWidth="950.0" style="-fx-background-color: #0087A0;" />
+      <BorderPane prefHeight="60.0" prefWidth="950.0" style="-fx-background-color: #0087A0;">
+         <left>
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#actionBack" prefHeight="40.0" prefWidth="34.0" style="-fx-background-color: #0087A0;" BorderPane.alignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/134226-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </left></BorderPane>
       <Pane layoutX="39.0" layoutY="134.0" prefHeight="200.0" prefWidth="880.0" style="-fx-border-color: #FFFFFF; -fx-background-color: #FFFFFF;">
          <children>
             <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
@@ -61,12 +71,12 @@
          </children></Pane>
       <Pane layoutX="39.0" layoutY="367.0" prefHeight="200.0" prefWidth="880.0" style="-fx-border-color: #FFFFFF; -fx-background-color: #FFFFFF;">
          <children>
-            <TableView layoutX="19.0" layoutY="69.0" prefHeight="123.0" prefWidth="848.0">
+            <TableView fx:id="tblRegister" layoutX="19.0" layoutY="69.0" prefHeight="123.0" prefWidth="848.0">
               <columns>
-                <TableColumn prefWidth="162.0" text="Tipo do Combustível" />
-                <TableColumn minWidth="0.0" prefWidth="167.0" text="Valor" />
-                  <TableColumn fx:id="tblRegisterSupplies" minWidth="0.0" prefWidth="242.0" text="Litros" />
-                  <TableColumn minWidth="0.0" prefWidth="276.0" text="Funcionário" />
+                <TableColumn fx:id="clnFuelType" prefWidth="162.0" text="Tipo do Combustível" />
+                <TableColumn fx:id="clnValue" minWidth="0.0" prefWidth="167.0" text="Valor" />
+                  <TableColumn fx:id="clnLiters" minWidth="0.0" prefWidth="242.0" text="Litros" />
+                  <TableColumn fx:id="clnEmployee" minWidth="0.0" prefWidth="276.0" text="Funcionário" />
               </columns>
             </TableView>
             <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
