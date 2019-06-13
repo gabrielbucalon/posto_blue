@@ -6,6 +6,11 @@ public class Tanque {
     private double quantidadeCombustivel;
     private String tipoCombustivel;
 
+
+    public Tanque(String tipoCombustivel){ // Tipo do combustivel
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
     @FXML
     public void initialize(){ // Segundo a ser carregado
 
@@ -25,6 +30,11 @@ public class Tanque {
 
     public void setQuantidadeCombustivel(double quantidadeCombustivel) {
         this.quantidadeCombustivel = quantidadeCombustivel;
+    }
+
+    @Override
+    public String toString(){
+        return tipoCombustivel;
     }
 
 

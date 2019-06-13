@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SobreController">
+   <children>
+      <BorderPane prefHeight="65.0" prefWidth="950.0" style="-fx-background-color: #0087A0; -fx-min-width: 100%;">
+         <left>
+            <Button mnemonicParsing="false" onAction="#actionBackToHome" prefHeight="66.0" prefWidth="177.0" style="-fx-background-color: #0087A0;" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+      <BorderPane layoutY="535.0" prefHeight="65.0" prefWidth="950.0" style="-fx-background-color: #0087A0; -fx-min-width: 100%;">
+         <left>
+            <Button mnemonicParsing="false" onAction="#actionBackToHome" prefHeight="66.0" prefWidth="177.0" style="-fx-background-color: #0087A0;" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/fullsize_2012_01_30_12_WDL-Logo-10213_30515_042446748_1666480522.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="262.0" text="Desenvolvido por:" textFill="#2e6bda">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="262.0" text="Gabriel Bucalon, Patrick Arashiro e Winicius Andrade" textFill="#2e6bda">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="291.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " textFill="#2e6bda">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="320.0" text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of " textFill="#2e6bda">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="345.0" text="type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting" textFill="#2e6bda">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="377.0" text="remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing." textFill="#2e6bda">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="405.0" text="Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textFill="#2e6bda">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backToHome" fitHeight="34.0" fitWidth="34.0" layoutX="16.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/134226-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

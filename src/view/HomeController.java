@@ -177,7 +177,12 @@ public class HomeController {
     }
 
     @FXML
-    private void actionSobre(ActionEvent event){
-        System.out.println("Action sobre");
+    private void actionSobre(ActionEvent event) throws IOException {
+        Node source = (Node) event.getSource(); // Pega o evento do botão
+        dialogStage = (Stage) source.getScene().getWindow();
+        dialogStage.close();
+        scene = new Scene(FXMLLoader.load(getClass().getResource("sobre.fxml")));
+        dialogStage.setScene(scene);
+        dialogStage.show();
     }
 }
