@@ -6,13 +6,16 @@ import javafx.scene.control.TableView;
 import view.AbastecimentoController;
 
 public class abastecimento {
-    String fuelType, value, liters, employee;
+    String fuelType, value, liters, employee, type;
 
     public abastecimento(String fuelType, String value, String liters, String employee){
         this.fuelType = fuelType;
         this.value = value;
         this.liters = liters;
         this.employee = employee;
+    }
+    public abastecimento(String type){
+        this.type = type;
     }
 
     public String getFuelType(){
@@ -43,4 +46,16 @@ public class abastecimento {
         this.employee = employee;
     }
 
+    public String getType() { return type; }
+    public void setType(String type) { this.type = type; }
+
+    /*@Override
+    public String toString() {
+        return getFuelType();
+    }*/
+
+    @Override
+    public String toString() {
+        return getType();
+    }
 }
