@@ -61,7 +61,7 @@ public class FaturamentoController extends connection implements Initializable {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(_sql);
             while(rs.next()){
-                double val = rs.getDouble("teste");
+                double val = rs.getDouble("lblFaturamento");
                 faturamentoTotal.setText("R$" + val);
                 System.out.println(val);
             }

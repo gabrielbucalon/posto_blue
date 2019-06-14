@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: dddddd;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeController">
@@ -74,15 +75,17 @@
                </image>
             </ImageView>
          </children></AnchorPane>
-      <Label fx:id="lblWelcome" layoutX="538.0" layoutY="104.0" text="Bem-vindo," textFill="#4d30bf">
+      <Label fx:id="lblWelcome" layoutX="471.0" layoutY="105.0" text="Bem-vindo," textFill="#2340e1">
          <font>
             <Font name="Segoe UI Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lblAbastecer11" layoutX="673.0" layoutY="104.0" text="Admin" textFill="#4d30bf">
+      <Label fx:id="lblAbastecer11" layoutX="606.0" layoutY="105.0" text="Admin" textFill="#2340e1">
          <font>
             <Font name="Segoe UI" size="24.0" />
          </font>
       </Label>
+      <BorderPane layoutX="186.0" prefHeight="60.0" prefWidth="774.0" style="-fx-background-color: #0087A0;" />
+      <BorderPane layoutX="186.0" layoutY="546.0" prefHeight="60.0" prefWidth="774.0" style="-fx-background-color: #0087A0;" />
    </children>
 </AnchorPane>
